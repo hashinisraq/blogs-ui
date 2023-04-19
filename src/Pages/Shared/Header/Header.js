@@ -39,12 +39,12 @@ const Header = () => {
                     </Nav>
 
                     <Navbar.Brand href="/home">
-                        <img src={logo} alt="logo" width="80rem" />
+                        <img src={logo} alt="logo" width="100rem" />
                     </Navbar.Brand>
 
 
                     <Button className="search-btn" onClick={handleShow}>
-                        <img src={search} alt="search icon" srcset="" width="20rem" />
+                        <img src={search} alt="search icon" srcSet="" width="20rem" />
                     </Button>
                 </Container>
             </Navbar>

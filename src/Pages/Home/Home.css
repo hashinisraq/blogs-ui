@@ -1,0 +1,29 @@
+.total-card {
+    box-shadow: 1px 1px 1px 1px darkgrey;
+}
+
+.title:hover {
+    text-decoration: underline;
+    text-decoration-color: #58E2D8;
+    cursor: pointer;
+}
+
+.banner {
+    cursor: pointer;
+    width: 80px;
+    height: 60px;
+}
+
+.banner:hover {
+    transform: translate(-2px, -2px);
+}
+
+.music:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.author:hover {
+    color: red;
+    cursor: pointer;
+}
