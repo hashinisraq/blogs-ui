@@ -1,9 +1,7 @@
 .header-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 0 15px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
 }
 
 .social-container {
@@ -26,8 +24,7 @@
 
 .icons {
     font-size: 25px;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-right: 2px;
 }
 
 .icons:hover {
