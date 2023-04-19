@@ -3,6 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 15px 0 15px 0;
 }
 
 .social-container {
@@ -20,5 +21,15 @@
 
 .search-btn:hover {
     background-color: #FF4C60;
-    transform: translate(5px, 5px);
+    transform: translate(1px, 1px);
+}
+
+.icons {
+    font-size: 25px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.icons:hover {
+    transform: translate(1px, 1px);
 }
