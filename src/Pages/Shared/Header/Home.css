@@ -1,0 +1,24 @@
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-btn {
+    border: 0;
+    border-radius: 50%;
+    background-color: #FF4C60;
+}
+
+.search-btn:hover {
+    background-color: #FF4C60;
+    transform: translate(5px, 5px);
+}
