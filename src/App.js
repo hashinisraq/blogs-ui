@@ -7,7 +7,7 @@ import Footer from "./Pages/Shared/Footer/Footer";
 
 function App() {
   return (
-    <>
+    <div style={{ backgroundColor: "#F9F9FE" }}>
       <Header />
       <Router>
         <Routes>
@@ -20,7 +20,7 @@ function App() {
         </Routes>
       </Router>
       <Footer />
-    </>
+    </div>
   );
 }
 
