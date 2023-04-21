@@ -2,9 +2,7 @@
 
 The site can be found at the following addresses 🌐:
 
-- Main: <https://hi-blog.netlify.app/>
-
-- Server Hosted: <https://railway.app/>
+- Main: <https://blog-hi.netlify.app>
 
 ## Pre-requisites
 
