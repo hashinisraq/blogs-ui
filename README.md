@@ -29,6 +29,6 @@ yarn --version
 After you have installed yarn, run the following command:
 
 ```bash
-cd hi-todo
+cd hi-blog-ui
 yarn install
 ```
