@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Posts from "../Posts/Posts";
 import RecentPosts from "../RecentPosts/RecentPosts";
 import useDatas from "../../Hooks/useDatas";
+import TagCloud from "../TagCloud/TagCloud";
 
 const Home = () => {
     const [datas] = useDatas();
@@ -24,20 +25,8 @@ const Home = () => {
                     <Row xs={1} md={1} lg={1} className="g-5">
                         <Col>
                             <RecentPosts />
+                            <TagCloud />
                         </Col>
-                        {/* {datas.map(data => (
-                            <Col key={data._id}>
-                                <Card>
-                                    <Card.Img variant="top" src={data.banner} />
-                                    <Card.Body>
-                                        <Card.Title>{data.title}</Card.Title>
-                                        <Card.Text>
-                                            {data.post}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                        ))} */}
                     </Row>
                 </Col>
             </Row>

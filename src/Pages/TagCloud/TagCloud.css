@@ -1,0 +1,32 @@
+.box {
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px darkgrey;
+}
+
+.box:hover {
+    transform: translate(-2px, -2px);
+}
+
+.Health:hover {
+    color: #FBD794;
+}
+
+.Lifestyle:hover {
+    color: #6EE6DD;
+}
+
+.Music:hover {
+    color: #FF5B7A;
+}
+
+.Technology:hover {
+    color: #599CFF;
+}
+
+.Travel:hover {
+    color: #58567B;
+}
+
+.Video:hover {
+    color: #FC40B1;
+}

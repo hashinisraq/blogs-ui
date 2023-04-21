@@ -7,7 +7,7 @@ const RecentPosts = () => {
     const [datas] = useDatas();
 
     return (
-        <Container>
+        <Container className="pb-3">
             <h5>Recent Posts <b style={{ "color": "#F248BD" }}>&#8212;</b></h5>
             <Row>
                 {
