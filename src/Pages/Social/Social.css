@@ -1,0 +1,39 @@
+.facebook {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #175BEB;
+}
+
+.twitter {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #1DA1F2;
+}
+
+.instagram {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #F248BD;
+}
+
+.linkedin {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #1DA1F2;
+}
+
+.facebook:hover {
+    transform: translate(1px, 1px);
+}
+
+.twitter:hover {
+    transform: translate(1px, 1px);
+}
+
+.instagram:hover {
+    transform: translate(1px, 1px);
+}
+
+.linkedin:hover {
+    transform: translate(1px, 1px);
+}

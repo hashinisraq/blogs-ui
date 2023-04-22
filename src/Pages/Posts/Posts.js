@@ -4,7 +4,7 @@ import { Card, Col } from "react-bootstrap";
 
 
 const Posts = ({ data }) => {
-    const { title, date, readTime, post } = data;
+    const { title, author, author_img, date, readTime, catagory, post } = data;
     return (
         <Col>
             <Card className="total-card p-2">
@@ -21,12 +21,12 @@ const Posts = ({ data }) => {
                     </Card.Text>
                 </Card.Body>
                 <Card.Body style={{ color: "#6A7180" }} className="d-flex align-items-center justify-content-between">
-                    <div className="text-center" style={{ boxShadow: "1px 1px 1px 1px darkgrey", width: "4.5rem", borderRadius: "4px" }}>
-                        <Card.Text><b className="text-danger"># </b><span className="music">Music</span></Card.Text>
+                    <div className="text-center px-2" style={{ boxShadow: "1px 1px 1px 1px darkgrey", borderRadius: "4px" }}>
+                        <Card.Text><b className="text-danger"># </b><span className="music">{catagory}</span></Card.Text>
                     </div>
                     <div className="d-flex align-items-center justify-content-between">
-                        <Card.Img style={{ width: "30px", height: "30px", borderRadius: "50%" }} src="https://themes.estudiopatagon.com/wordpress/maktub/wp-content/uploads/2022/05/avatar-10.jpg" />
-                        <Card.Text className="ps-2 author">Jonathan Doe</Card.Text>
+                        <Card.Img style={{ width: "30px", height: "30px", borderRadius: "50%" }} src={author_img} />
+                        <Card.Text className="ps-2 author">{author}</Card.Text>
                     </div>
                 </Card.Body>
             </Card>

@@ -4,6 +4,8 @@ import Posts from "../Posts/Posts";
 import RecentPosts from "../RecentPosts/RecentPosts";
 import useDatas from "../../Hooks/useDatas";
 import TagCloud from "../TagCloud/TagCloud";
+import Social from "../Social/Social";
+import Advertising from "../Advertising/Advertising";
 
 const Home = () => {
     const [datas] = useDatas();
@@ -26,6 +28,8 @@ const Home = () => {
                         <Col>
                             <RecentPosts />
                             <TagCloud />
+                            <Social />
+                            <Advertising />
                         </Col>
                     </Row>
                 </Col>

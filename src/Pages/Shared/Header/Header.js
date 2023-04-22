@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import logo from "./images/logo.png";
 import search from "./images/search.png";
-import "./Home.css";
+import "./Header.css";
 
 
 const Header = () => {
