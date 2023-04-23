@@ -27,21 +27,6 @@ const Subscribe = () => {
                 <FontAwesomeIcon icon={faTwitter} className="social_icon" style={{ "color": "#1DA1F2" }} />
                 <FontAwesomeIcon icon={faInstagram} className="social_icon" style={{ "color": "#F248BD" }} />
                 <FontAwesomeIcon icon={faLinkedin} className="social_icon" style={{ "color": "#1DA1F2" }} />
-
-                {/* <Nav className="socialContainer text-center" style={{ padding: "0px 26rem" }}>
-                    <Nav.Link href="https://facebook.com">
-                        <FontAwesomeIcon icon={faFacebookF} className="icons" style={{ "color": "#175BEB" }} />
-                    </Nav.Link>
-                    <Nav.Link href="https://twitter.com">
-                        <FontAwesomeIcon icon={faTwitter} className="icons" style={{ "color": "#1DA1F2" }} />
-                    </Nav.Link>
-                    <Nav.Link href="https://instagram.com">
-                        <FontAwesomeIcon icon={faInstagram} className="icons" style={{ "color": "#F248BD" }} />
-                    </Nav.Link>
-                    <Nav.Link href="https://linkedin.com">
-                        <FontAwesomeIcon icon={faLinkedin} className="icons" style={{ "color": "#1DA1F2" }} />
-                    </Nav.Link>
-                </Nav> */}
             </Container>
         </Container>
     );
