@@ -6,12 +6,14 @@ import styles from "../../Assets/styles.module.css"
 const RecentPosts = () => {
     const [datas] = useDatas();
 
+    const selectedDatas = datas.slice(0, 3);
+
     return (
         <Container className="pb-3">
             <h5 className={styles.textColorHeading1}>Recent Posts <b style={{ "color": "#F248BD" }}>&#8212;</b></h5>
             <Row>
                 {
-                    datas.map(data =>
+                    selectedDatas.map(data =>
                         <Col key={data._id}>
                             <Card className={styles.bgColor1 + " " + styles.border0}>
                                 <Card.Body className={styles.flexCenterStart + " " + styles.paddingX0}>

@@ -3,6 +3,10 @@
     cursor: pointer;
 }
 
+.author {
+    color: #4B4870;
+}
+
 .author:hover {
     color: red;
     cursor: pointer;
