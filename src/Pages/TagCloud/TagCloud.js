@@ -1,11 +1,12 @@
 import React from "react";
 import { Col, Row, Stack } from "react-bootstrap";
 import "./TagCloud.css";
+import styles from "../../Assets/styles.module.css";
 
 const TagCloud = () => {
     return (
-        <div className="pb-3">
-            <h5>Tag Cloud <b style={{ "color": "#F248BD" }}>&#8212;</b></h5>
+        <div className={styles.paddingBottom3}>
+            <h5 className={styles.textColorHeading1}>Tag Cloud <b style={{ "color": "#F248BD" }}>&#8212;</b></h5>
             <Row>
                 <Col className="text-secondary">
                     <Stack direction="horizontal" gap={2} className="pt-3 pb-2">

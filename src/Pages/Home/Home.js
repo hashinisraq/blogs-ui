@@ -14,7 +14,7 @@ const Home = () => {
 
     return (
         <>
-            <div className={styles.bgColor1 + " " + styles.padTopBottom}>
+            <div className={styles.bgColor1 + " " + styles.paddingTopBottom1}>
                 <Container>
                     <Row>
                         <Col sm={12} md={8} lg={8} className="pb-5">
@@ -40,7 +40,7 @@ const Home = () => {
                     </Row>
                 </Container>
             </div>
-            <div className={styles.bgColor2 + " " + styles.padTopBottom}>
+            <div className={styles.bgColor2 + " " + styles.paddingTopBottom1}>
                 <Subscribe />
             </div>
         </>

@@ -3,12 +3,13 @@ import { Button, Container, Form, InputGroup } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./Subscribe.css";
+import styles from "../../Assets/styles.module.css";
 
 const Subscribe = () => {
     return (
-        <Container className="text-center">
-            <h2>Subscribe to HI-BLOG</h2>
-            <h6 className="py-3">Get the latest posts delivered right to your email.</h6>
+        <Container className={styles.textCenter + " " + styles.paddingTopBottom1}>
+            <h2 className={styles.textColorBody1}>Subscribe to HI-BLOG</h2>
+            <h6 className={styles.textColorBody1 + " " + styles.paddingTopBottom2}>Get the latest posts delivered right to your email.</h6>
 
             <Container>
                 <InputGroup className="mb-4">

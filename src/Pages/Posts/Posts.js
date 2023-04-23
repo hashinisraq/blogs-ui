@@ -10,10 +10,10 @@ const Posts = ({ data }) => {
         <Col>
             <Card className={styles.boxShadow1 + " " + styles.paddingStart2}>
                 <Card.Body className={styles.flexCenterStart}>
-                    <Card.Img className={styles.tranformOnHover + " " + styles.bannerSize} src={data.banner} />
+                    <Card.Img className={styles.tranformOnHover + " " + styles.bannerSize1} src={data.banner} />
                     <Card.Title className={styles.textColorHeading1 + " " + styles.paddingStart3 + " " + styles.heading1}>{title}</Card.Title>
                 </Card.Body>
-                <Card.Body className={styles.textColorBody + " " + styles.textCenter}>
+                <Card.Body className={styles.textColorBody1 + " " + styles.textCenter}>
                     <Card.Text>
                         {date} <b style={{ "color": "#F248BD" }}>&#8212;</b> {readTime} min read
                     </Card.Text>

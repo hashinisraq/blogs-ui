@@ -1,3 +1,4 @@
+/* --------------- COLOR --------------- */
 .bgColor1 {
     background-color: #F9F9FE;
 }
@@ -11,10 +12,22 @@
     font-size: 22px;
 }
 
-.textColorBody {
+.textColorHeading2 {
+    color: #4B4870;
+    font-size: 16px;
+}
+
+.textColorBody1 {
     color: #6A7180;
 }
 
+.textColorBody2 {
+    color: #6A7180;
+    font-size: 13px;
+}
+
+
+/* --------------- ALIGNMENT --------------- */
 .textCenter {
     text-align: center;
 }
@@ -31,8 +44,23 @@
     justify-content: space-between;
 }
 
-.padTopBottom {
+
+/* --------------- SIZING --------------- */
+.paddingX0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.paddingX2 {
+    padding: 0 8px;
+}
+
+.paddingTopBottom1 {
     padding: 50px 0;
+}
+
+.paddingTopBottom2 {
+    padding: 20px 0;
 }
 
 .paddingStart2 {
@@ -43,24 +71,36 @@
     padding-left: 15px;
 }
 
-.paddingX2 {
-    padding: 0 8px;
+.paddingBottom3 {
+    padding-bottom: 15px;
 }
 
 .boxShadow1 {
     box-shadow: 1px 1px 0.2px 0px darkgrey;
 }
 
-.bannerSize {
+.bannerSize1 {
     cursor: pointer;
     width: 100px;
     height: 100px;
+}
+
+.bannerSize2 {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
 }
 
 .borderRadius4 {
     border-radius: 4px;
 }
 
+.border0 {
+    border: 0;
+}
+
+
+/* --------------- HOVER --------------- */
 .heading1:hover {
     text-decoration: underline;
     text-decoration-color: #58E2D8;

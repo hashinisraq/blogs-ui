@@ -1,26 +1,26 @@
 import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import useDatas from "../../Hooks/useDatas";
-import "./RecentPost.css";
+import styles from "../../Assets/styles.module.css"
 
 const RecentPosts = () => {
     const [datas] = useDatas();
 
     return (
         <Container className="pb-3">
-            <h5>Recent Posts <b style={{ "color": "#F248BD" }}>&#8212;</b></h5>
+            <h5 className={styles.textColorHeading1}>Recent Posts <b style={{ "color": "#F248BD" }}>&#8212;</b></h5>
             <Row>
                 {
                     datas.map(data =>
                         <Col key={data._id}>
-                            <Card className="border-0" style={{ backgroundColor: "#F9F9FE" }}>
-                                <Card.Body className="px-0 d-flex align-items-center justify-content-start">
+                            <Card className={styles.bgColor1 + " " + styles.border0}>
+                                <Card.Body className={styles.flexCenterStart + " " + styles.paddingX0}>
                                     <div>
-                                        <Card.Img className="r_banner" src={data.banner} />
+                                        <Card.Img className={styles.bannerSize2 + " " + styles.tranformOnHover} src={data.banner} />
                                     </div>
-                                    <div className="ps-3">
-                                        <Card.Title className="r_title">{data.title}</Card.Title>
-                                        <Card.Text className="r_text">
+                                    <div className={styles.paddingStart3}>
+                                        <Card.Title className={styles.textColorHeading2 + " " + styles.heading1}>{data.title}</Card.Title>
+                                        <Card.Text className={styles.textColorBody2}>
                                             {data.date} <b style={{ "color": "#F248BD" }}>&#8212;</b> {data.readTime} min read
                                         </Card.Text>
                                     </div>
