@@ -6,14 +6,14 @@ import "./Social.css";
 
 const Social = () => {
     return (
-        <Container className="py-3">
+        <Container className="pb-3">
             <h5>Social <b style={{ "color": "#F248BD" }}>&#8212;</b></h5>
-            <Row className="ps-3">
+            <Row>
                 <Col>
-                    <FontAwesomeIcon icon={faFacebookF} className="facebook border text-white p-3 m-2" />
-                    <FontAwesomeIcon icon={faTwitter} className="twitter border text-white p-3 m-2" />
-                    <FontAwesomeIcon icon={faInstagram} className="instagram border text-white p-3 m-2" />
-                    <FontAwesomeIcon icon={faLinkedin} className="linkedin border text-white p-3 m-2" />
+                    <FontAwesomeIcon icon={faFacebookF} className="facebook border text-white p-3 m-1" />
+                    <FontAwesomeIcon icon={faTwitter} className="twitter border text-white p-3 m-1" />
+                    <FontAwesomeIcon icon={faInstagram} className="instagram border text-white p-3 m-1" />
+                    <FontAwesomeIcon icon={faLinkedin} className="linkedin border text-white p-3 m-1" />
                 </Col>
             </Row>
         </Container>

@@ -15,7 +15,7 @@ const Header = () => {
 
 
     return (
-        <div>
+        <div style={{ backgroundColor: "#F9F9FE" }}>
             <Navbar collapseOnSelect expand="lg" variant="light">
                 <Container className="header-container">
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

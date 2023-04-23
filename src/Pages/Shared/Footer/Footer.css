@@ -1,0 +1,12 @@
+.icon {
+    padding-right: 2px;
+    font-size: 18px;
+}
+
+.icon:hover {
+    transform: translate(-1px, -1px);
+}
+
+.founder {
+    cursor: pointer;
+}

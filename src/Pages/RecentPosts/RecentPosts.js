@@ -8,13 +8,13 @@ const RecentPosts = () => {
 
     return (
         <Container className="pb-3">
-            <h5>Recent Posts <b style={{ "color": "#F248BD" }}>&#8212;</b></h5>
+            <h5 className="pb-3">Recent Posts <b style={{ "color": "#F248BD" }}>&#8212;</b></h5>
             <Row>
                 {
                     datas.map(data =>
                         <Col key={data._id}>
                             <Card className="border-0" style={{ backgroundColor: "#F9F9FE" }}>
-                                <Card.Body className="d-flex align-items-center justify-content-start">
+                                <Card.Body className="px-0 d-flex align-items-center justify-content-start">
                                     <div>
                                         <Card.Img className="r_banner" src={data.banner} />
                                     </div>
