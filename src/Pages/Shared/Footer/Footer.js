@@ -28,7 +28,11 @@ const Footer = () => {
                         <div className="d-flex align-items-center justify-content-start ps-3 pt-2">
                             <img alt="logo" style={{ width: "75px", height: "75px", borderRadius: "50%" }} src="https://themes.estudiopatagon.com/wordpress/maktub/wp-content/uploads/2022/05/avatar-10.jpg" />
                             <div className={styles.paddingStart3}>
-                                <big className="founder">Jonathan Doe</big>
+                                <big className="founder">
+                                    <a href="/home" style={{ textDecoration: "none", color: "#4B4870" }}>
+                                        Jonathan Doe
+                                    </a>
+                                </big>
                                 <p className={styles.textColorBody2}>Founder & Editor</p>
                                 <small className="d-flex align-item-start justify-content-between">
                                     <Nav.Link href="https://facebook.com">
@@ -53,7 +57,9 @@ const Footer = () => {
                 </Row>
                 <Row className={styles.textCenter}>
                     <Col sm={12} md={12} lg={12}>
-                        <img src={logo} width="180rem" alt="logo" />
+                        <a href="/home" rel="noopener noreferrer">
+                            <img src={logo} width="180rem" alt="logo" />
+                        </a>
                         <div className={styles.textColorHeading1}>
                             © HI-BLOG 2023
                         </div>

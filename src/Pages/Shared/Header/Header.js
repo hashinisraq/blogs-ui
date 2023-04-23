@@ -57,7 +57,7 @@ const Header = () => {
                 keyboard={false}
                 centered
             >
-                <Container style={{ "backgroundColor": "white", "color": "black", "borderRadius": "10px" }}>
+                <Container style={{ "backgroundColor": "white", "color": "#4B4870", "borderRadius": "10px" }}>
                     <Modal.Header closeButton>
                         <Modal.Title id="contained-modal-title-vcenter">Enter your search</Modal.Title>
                     </Modal.Header>
@@ -67,15 +67,15 @@ const Header = () => {
                                 placeholder="Type to start your search"
                                 aria-label="search"
                                 aria-describedby="basic-addon2"
-                                style={{ "border": "1px solid #FF4C60" }}
+                                style={{ "border": "1px solid #4B4870" }}
                             />
-                            <Button variant="outline-danger" id="button-addon2">
+                            <Button style={{ backgroundColor: "#4B4870" }} id="button-addon2">
                                 Search
                             </Button>
                         </InputGroup>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button variant="dark" onClick={handleClose}>
+                        <Button style={{ backgroundColor: "#4B4870" }} onClick={handleClose}>
                             Close
                         </Button>
                     </Modal.Footer>

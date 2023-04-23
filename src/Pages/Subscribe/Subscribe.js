@@ -24,10 +24,18 @@ const Subscribe = () => {
                 </InputGroup>
             </Container>
             <Container>
-                <FontAwesomeIcon icon={faFacebookF} className="social_icon" style={{ "color": "#175BEB" }} />
-                <FontAwesomeIcon icon={faTwitter} className="social_icon" style={{ "color": "#1DA1F2" }} />
-                <FontAwesomeIcon icon={faInstagram} className="social_icon" style={{ "color": "#F248BD" }} />
-                <FontAwesomeIcon icon={faLinkedin} className="social_icon" style={{ "color": "#1DA1F2" }} />
+                <a href="https://facebook.com">
+                    <FontAwesomeIcon icon={faFacebookF} className="social_icon" style={{ "color": "#175BEB" }} />
+                </a>
+                <a href="http://twitter.com">
+                    <FontAwesomeIcon icon={faTwitter} className="social_icon" style={{ "color": "#1DA1F2" }} />
+                </a>
+                <a href="http://instagram.com">
+                    <FontAwesomeIcon icon={faInstagram} className="social_icon" style={{ "color": "#F248BD" }} />
+                </a>
+                <a href="http://linkedin.com">
+                    <FontAwesomeIcon icon={faLinkedin} className="social_icon" style={{ "color": "#1DA1F2" }} />
+                </a>
             </Container>
         </Container>
     );
