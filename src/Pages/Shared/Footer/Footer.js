@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Col, Container, Nav, Row } from "react-bootstrap";
+import { Col, Container, Nav, Row } from "react-bootstrap";
 import RecentPosts from "../../RecentPosts/RecentPosts";
 import Social from "../../Social/Social";
 import TagCloud from "../../TagCloud/TagCloud";

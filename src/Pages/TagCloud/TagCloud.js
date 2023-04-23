@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row, Stack } from "react-bootstrap";
+import { Col, Row, Stack } from "react-bootstrap";
 import "./TagCloud.css";
 
 const TagCloud = () => {

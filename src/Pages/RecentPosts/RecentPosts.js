@@ -21,7 +21,7 @@ const RecentPosts = () => {
                                     <div className="ps-3">
                                         <Card.Title className="r_title">{data.title}</Card.Title>
                                         <Card.Text className="r_text">
-                                            {data.date} <b style={{ "color": "#F248BD" }}>&#8212;</b> {data.readTime} read
+                                            {data.date} <b style={{ "color": "#F248BD" }}>&#8212;</b> {data.readTime} min read
                                         </Card.Text>
                                     </div>
                                 </Card.Body>

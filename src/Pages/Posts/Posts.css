@@ -1,33 +1,3 @@
-.total-card {
-    box-shadow: 1px 1px 1px 1px darkgrey;
-}
-
-.title {
-    font-size: 22px;
-    color: #474562;
-}
-
-.title:hover {
-    text-decoration: underline;
-    text-decoration-color: #58E2D8;
-    cursor: pointer;
-}
-
-.card_body {
-    text-align: center;
-    color: #6A7180;
-}
-
-.banner {
-    cursor: pointer;
-    width: 100px;
-    height: 100px;
-}
-
-.banner:hover {
-    transform: translate(-2px, -2px);
-}
-
 .music:hover {
     color: red;
     cursor: pointer;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container, Form, InputGroup, Nav } from "react-bootstrap";
+import { Button, Container, Form, InputGroup } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./Subscribe.css";

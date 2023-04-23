@@ -7,13 +7,14 @@ import TagCloud from "../TagCloud/TagCloud";
 import Social from "../Social/Social";
 import Advertising from "../Advertising/Advertising";
 import Subscribe from "../Subscribe/Subscribe";
+import styles from "../../Assets/styles.module.css";
 
 const Home = () => {
     const [datas] = useDatas();
 
     return (
         <>
-            <div className="py-5" style={{ backgroundColor: "#F9F9FE" }}>
+            <div className={styles.bgColor1 + " " + styles.padTopBottom}>
                 <Container>
                     <Row>
                         <Col sm={12} md={8} lg={8} className="pb-5">
@@ -39,7 +40,7 @@ const Home = () => {
                     </Row>
                 </Container>
             </div>
-            <div className="py-5" style={{ backgroundColor: "white" }}>
+            <div className={styles.bgColor2 + " " + styles.padTopBottom}>
                 <Subscribe />
             </div>
         </>

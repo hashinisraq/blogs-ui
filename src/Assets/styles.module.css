@@ -1,0 +1,72 @@
+.bgColor1 {
+    background-color: #F9F9FE;
+}
+
+.bgColor2 {
+    background-color: white;
+}
+
+.textColorHeading1 {
+    color: #4B4870;
+    font-size: 22px;
+}
+
+.textColorBody {
+    color: #6A7180;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.flexCenterStart {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flexCenterBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.padTopBottom {
+    padding: 50px 0;
+}
+
+.paddingStart2 {
+    padding-left: 8px;
+}
+
+.paddingStart3 {
+    padding-left: 15px;
+}
+
+.paddingX2 {
+    padding: 0 8px;
+}
+
+.boxShadow1 {
+    box-shadow: 1px 1px 0.2px 0px darkgrey;
+}
+
+.bannerSize {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+.borderRadius4 {
+    border-radius: 4px;
+}
+
+.heading1:hover {
+    text-decoration: underline;
+    text-decoration-color: #58E2D8;
+    cursor: pointer;
+}
+
+.tranformOnHover:hover {
+    transform: translate(-2px, -2px);
+}
