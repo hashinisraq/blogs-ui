@@ -16,7 +16,7 @@ const Home = () => {
             <div className="py-5" style={{ backgroundColor: "#F9F9FE" }}>
                 <Container>
                     <Row>
-                        <Col sm={12} md={8} lg={8}>
+                        <Col sm={12} md={8} lg={8} className="pb-5">
                             <Row xs={1} md={2} lg={2} className="g-5">
                                 {datas.map(data => (
                                     <Posts key={data._id}

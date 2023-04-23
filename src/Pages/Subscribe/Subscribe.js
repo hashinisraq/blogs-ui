@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Container, Form, InputGroup, Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import "./Subscribe.css";
 
 const Subscribe = () => {
     return (
@@ -9,7 +10,7 @@ const Subscribe = () => {
             <h2>Subscribe to HI-BLOG</h2>
             <h6 className="py-3">Get the latest posts delivered right to your email.</h6>
 
-            <div style={{ padding: "0px 24rem" }}>
+            <Container>
                 <InputGroup className="mb-4">
                     <Form.Control
                         placeholder="Enter your email address"
@@ -20,9 +21,14 @@ const Subscribe = () => {
                         Submit
                     </Button>
                 </InputGroup>
-            </div>
-            <div>
-                <Nav className="social-container text-center" style={{ padding: "0px 26rem" }}>
+            </Container>
+            <Container>
+                <FontAwesomeIcon icon={faFacebookF} className="social_icon" style={{ "color": "#175BEB" }} />
+                <FontAwesomeIcon icon={faTwitter} className="social_icon" style={{ "color": "#1DA1F2" }} />
+                <FontAwesomeIcon icon={faInstagram} className="social_icon" style={{ "color": "#F248BD" }} />
+                <FontAwesomeIcon icon={faLinkedin} className="social_icon" style={{ "color": "#1DA1F2" }} />
+
+                {/* <Nav className="socialContainer text-center" style={{ padding: "0px 26rem" }}>
                     <Nav.Link href="https://facebook.com">
                         <FontAwesomeIcon icon={faFacebookF} className="icons" style={{ "color": "#175BEB" }} />
                     </Nav.Link>
@@ -35,8 +41,8 @@ const Subscribe = () => {
                     <Nav.Link href="https://linkedin.com">
                         <FontAwesomeIcon icon={faLinkedin} className="icons" style={{ "color": "#1DA1F2" }} />
                     </Nav.Link>
-                </Nav>
-            </div>
+                </Nav> */}
+            </Container>
         </Container>
     );
 };

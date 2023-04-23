@@ -8,12 +8,12 @@ const Social = () => {
     return (
         <Container className="pb-3">
             <h5>Social <b style={{ "color": "#F248BD" }}>&#8212;</b></h5>
-            <Row>
+            <Row className="pt-2">
                 <Col>
-                    <FontAwesomeIcon icon={faFacebookF} className="facebook border text-white p-3 m-1" />
-                    <FontAwesomeIcon icon={faTwitter} className="twitter border text-white p-3 m-1" />
-                    <FontAwesomeIcon icon={faInstagram} className="instagram border text-white p-3 m-1" />
-                    <FontAwesomeIcon icon={faLinkedin} className="linkedin border text-white p-3 m-1" />
+                    <FontAwesomeIcon icon={faFacebookF} className="facebook border text-white px-3 py-2 m-1" />
+                    <FontAwesomeIcon icon={faTwitter} className="twitter border text-white p-2 m-1" />
+                    <FontAwesomeIcon icon={faInstagram} className="instagram border text-white p-2 m-1" />
+                    <FontAwesomeIcon icon={faLinkedin} className="linkedin border text-white p-2 m-1" />
                 </Col>
             </Row>
         </Container>
