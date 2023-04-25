@@ -9,7 +9,7 @@ const RecentPosts = () => {
     const selectedDatas = datas.slice(0, 3);
 
     return (
-        <Container className="pb-3">
+        <Container className={styles.paddingBottom3}>
             <h5 className={styles.textColorHeading1}>Recent Posts <b style={{ "color": "#F248BD" }}>&#8212;</b></h5>
             <Row>
                 {
@@ -18,10 +18,10 @@ const RecentPosts = () => {
                             <Card className={styles.bgColor1 + " " + styles.border0}>
                                 <Card.Body className={styles.flexCenterStart + " " + styles.paddingX0}>
                                     <div>
-                                        <Card.Img className={styles.bannerSize2 + " " + styles.tranformOnHover} src={data.banner} />
+                                        <Card.Img onClick={event => window.location.href = `/post/${data.title}`} className={styles.bannerSize2 + " " + styles.tranformOnHover} src={data.banner} />
                                     </div>
                                     <div className={styles.paddingStart3}>
-                                        <Card.Title className={styles.textColorHeading2 + " " + styles.heading1}>{data.title}</Card.Title>
+                                        <Card.Title onClick={event => window.location.href = `/post/${data.title}`} className={styles.textColorHeading2 + " " + styles.heading1}>{data.title}</Card.Title>
                                         <Card.Text className={styles.textColorBody2}>
                                             {data.date} <b style={{ "color": "#F248BD" }}>&#8212;</b> {data.readTime} min read
                                         </Card.Text>

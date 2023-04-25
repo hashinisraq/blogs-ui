@@ -32,10 +32,21 @@
     text-align: center;
 }
 
+.textStart {
+    text-align: left;
+}
+
 .flexCenterStart {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+
+.flexCenterCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .flexCenterBetween {
@@ -53,6 +64,10 @@
 
 .paddingX2 {
     padding: 0 8px;
+}
+
+.paddingTop3 {
+    padding-left: 15px;
 }
 
 .paddingTopBottom1 {

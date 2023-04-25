@@ -24,21 +24,21 @@ const ReadPost = () => {
                     <Row>
                         <Col sm={12} md={8} lg={8} className={styles.bgColor2 + " " + styles.paddingTopBottom2}>
                             <Container>
-                                <Container className="text-center">
+                                <Container className={styles.textCenter}>
                                     <img width="100%" src={post?.banner} alt="banner" />
-                                    <h3 className="py-3">{post?.title}</h3>
-                                    <h5 className="py-3">{post?.date} <b style={{ "color": "#F248BD" }}>&#8212;</b> {post?.readTime} min read <FontAwesomeIcon icon={faComment} style={{ "color": "#F248BD", paddingLeft: "8px", paddingRight: "5px" }} />{post?.totalComment} <FontAwesomeIcon icon={faEye} style={{ "color": "#F248BD", paddingLeft: "8px", paddingRight: "5px" }} />{post?.totalViews}</h5>
-                                    <p className="text-start pt-3">{post?.post}</p>
+                                    <h3 className={styles.paddingTopBottom2}>{post?.title}</h3>
+                                    <h5 className={styles.paddingTopBottom2}>{post?.date} <b style={{ "color": "#F248BD" }}>&#8212;</b> {post?.readTime} min read <FontAwesomeIcon icon={faComment} style={{ "color": "#F248BD", paddingLeft: "8px", paddingRight: "5px" }} />{post?.totalComment} <FontAwesomeIcon icon={faEye} style={{ "color": "#F248BD", paddingLeft: "8px", paddingRight: "5px" }} />{post?.totalViews}</h5>
+                                    <p className={styles.textStart + " " + styles.paddingTop3}>{post?.post}</p>
                                 </Container>
-                                <Container className="d-flex align-items-center justify-content-center">
+                                <Container className={styles.flexCenterCenter}>
                                     <div>
                                         <img style={{ borderRadius: "50%" }} width="40px" src={post?.author_img} alt="author_img" />
                                     </div>
-                                    <div className="ps-2">
+                                    <div className={styles.paddingStart2}>
                                         <small>{post?.author}</small>
                                     </div>
                                 </Container>
-                                <h6 className="text-center py-3">Catagorized in: {post?.catagory}</h6>
+                                <h6 className={styles.textCenter + " " + styles.paddingTopBottom2}>Catagorized in: {post?.catagory}</h6>
                             </Container>
                         </Col>
                         <Col sm={12} md={4} lg={4}>
@@ -54,23 +54,6 @@ const ReadPost = () => {
                     </Row>
                 </Container>
             </div>
-            {/* <Container>
-                <Container className="text-center">
-                    <img src={post?.banner} alt="banner" />
-                    <h3 className="py-3">{post?.title}</h3>
-                    <h5 className="py-3">{post?.date} <b style={{ "color": "#F248BD" }}>&#8212;</b> {post?.readTime} min read <FontAwesomeIcon icon={faComment} style={{ "color": "#F248BD", paddingLeft: "8px", paddingRight: "5px" }} />{post?.totalComment} <FontAwesomeIcon icon={faEye} style={{ "color": "#F248BD", paddingLeft: "8px", paddingRight: "5px" }} />{post?.totalViews}</h5>
-                    <p className="text-start pt-3">{post?.post}</p>
-                </Container>
-                <Container className="d-flex align-items-center justify-content-center">
-                    <div>
-                        <img style={{ borderRadius: "50%" }} width="40px" src={post?.author_img} alt="author_img" />
-                    </div>
-                    <div className="ps-2">
-                        <small>{post?.author}</small>
-                    </div>
-                </Container>
-                <h6 className="text-center py-3">Catagorized in: {post?.catagory}</h6>
-            </Container> */}
         </>
     );
 };
