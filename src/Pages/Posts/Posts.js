@@ -2,6 +2,7 @@ import React from "react";
 import "./Posts.css";
 import { Card, Col } from "react-bootstrap";
 import styles from "../../Assets/styles.module.css";
+import { Link } from "react-router-dom";
 
 
 const Posts = ({ data }) => {
@@ -10,8 +11,12 @@ const Posts = ({ data }) => {
         <Col>
             <Card className={styles.boxShadow1 + " " + styles.paddingStart2}>
                 <Card.Body className={styles.flexCenterStart}>
-                    <Card.Img className={styles.tranformOnHover + " " + styles.bannerSize1} src={data.banner} />
-                    <Card.Title className={styles.textColorHeading1 + " " + styles.paddingStart3 + " " + styles.heading1}>{title}</Card.Title>
+                    <Link to={`/post/${title}`}>
+                        <Card.Img className={styles.tranformOnHover + " " + styles.bannerSize1} src={data.banner} />
+                    </Link>
+                    <Link to={`/post/${title}`} style={{ textDecoration: "none" }}>
+                        <Card.Title className={styles.textColorHeading1 + " " + styles.paddingStart3 + " " + styles.heading1}>{title}</Card.Title>
+                    </Link>
                 </Card.Body>
                 <Card.Body className={styles.textColorBody1 + " " + styles.textCenter}>
                     <Card.Text>
