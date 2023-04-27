@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, Container, Form, InputGroup, Modal, Nav, Navbar } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { useNavigate } from "react-router";
 import logo from "./images/logo.png";
 import search from "./images/search.png";
 import "./Header.css";
@@ -12,6 +13,19 @@ const Header = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+
+    const [searchTerm, setSearchTerm] = useState('');
+    const navigate = useNavigate();
+
+    const handleInputChange = (event) => {
+        setSearchTerm(event.target.value);
+    };
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        navigate(`/searchResult/${searchTerm}`);
+    };
 
 
     return (
@@ -67,9 +81,11 @@ const Header = () => {
                                 placeholder="Type to start your search"
                                 aria-label="search"
                                 aria-describedby="basic-addon2"
+                                value={searchTerm}
+                                onChange={handleInputChange}
                                 style={{ "border": "1px solid #4B4870" }}
                             />
-                            <Button style={{ backgroundColor: "#4B4870" }} id="button-addon2">
+                            <Button onClick={handleSubmit} style={{ backgroundColor: "#4B4870" }} id="button-addon2">
                                 Search
                             </Button>
                         </InputGroup>
@@ -81,7 +97,7 @@ const Header = () => {
                     </Modal.Footer>
                 </Container>
             </Modal>
-        </div>
+        </div >
     );
 };
 

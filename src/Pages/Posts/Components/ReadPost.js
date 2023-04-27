@@ -9,6 +9,7 @@ import TagCloud from "../../TagCloud/TagCloud";
 import Social from "../../Social/Social";
 import Advertising from "../../Advertising/Advertising";
 import styles from "../../../Assets/styles.module.css";
+import Header from "../../Shared/Header/Header";
 
 const ReadPost = () => {
     const title = useParams();
@@ -19,6 +20,7 @@ const ReadPost = () => {
 
     return (
         <>
+            <Header />
             <div className={styles.bgColor1 + " " + styles.paddingTopBottom1}>
                 <Container>
                     <Row>

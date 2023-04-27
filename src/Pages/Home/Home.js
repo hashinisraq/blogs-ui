@@ -8,12 +8,14 @@ import Social from "../Social/Social";
 import Advertising from "../Advertising/Advertising";
 import Subscribe from "../Subscribe/Subscribe";
 import styles from "../../Assets/styles.module.css";
+import Header from "../Shared/Header/Header";
 
 const Home = () => {
     const [datas] = useDatas();
 
     return (
         <>
+            <Header />
             <div className={styles.bgColor1 + " " + styles.paddingTopBottom1}>
                 <Container>
                     <Row>
