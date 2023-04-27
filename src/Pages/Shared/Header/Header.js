@@ -78,7 +78,7 @@ const Header = () => {
                     <Modal.Body>
                         <InputGroup className="mb-3">
                             <Form.Control
-                                placeholder="Type to start your search"
+                                placeholder="Travel Technology Music Lifestyle Health"
                                 aria-label="search"
                                 aria-describedby="basic-addon2"
                                 value={searchTerm}
