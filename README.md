@@ -1,8 +1,8 @@
-# HI_BLOG
+# HI_BLOGS
 
 The site can be found at the following addresses 🌐:
 
-- Main: <https://blog-hi.netlify.app>
+- Main: <https://hi-blogs.netlify.app>
 
 ## Pre-requisites
 
