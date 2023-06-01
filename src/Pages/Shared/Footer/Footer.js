@@ -61,7 +61,7 @@ const Footer = () => {
                             <img src={logo} width="180rem" alt="logo" />
                         </a>
                         <div className={styles.textColorHeading1}>
-                            © HI-BLOG 2023
+                            © HI-BLOG
                         </div>
                     </Col>
                 </Row>
